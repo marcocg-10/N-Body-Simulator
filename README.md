@@ -13,11 +13,7 @@
 
 # Problem Description
 
-This project implements a simulation of an arbitrary number (**N**) of bodies moving in three-dimensional space.
-
-The simulation models a physical phenomenon such as gravitational attraction or electromagnetism. For this project, **gravitational attraction based on classical physics models** is used.
-
-The program reads a job file containing one or more simulation configurations, each associated with:
+This project implements a simulation of an arbitrary number (**N**) of bodies moving in three-dimensional space, the design is explained thoroughly in the [Design Document](design/README.md). The simulation models a physical phenomenon such as gravitational attraction or electromagnetism. For this project, **gravitational attraction based on classical physics models** is used. The program reads a job file containing one or more simulation configurations, each associated with:
 
 * A universe file.
 * A simulation time step (`delta_t`).
@@ -206,10 +202,6 @@ mpiexec -np 3 bin/proyecto02 test/job001/job001.tsv 4
 
 # Results Analysis
 
-A detailed performance comparison between the serial, multithreaded, and distributed implementations can be found in:
-
-```text
-report/README.md
-```
+A detailed performance comparison between the serial, multithreaded, and distributed implementations can be found in the [report](report/README.md) document.
 
 The report includes execution time measurements, scalability analysis, and performance comparisons across different execution configurations.
