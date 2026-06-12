@@ -120,9 +120,7 @@ For a detailed discussion of the solution design and implementation, see:
 design/README.md
 ```
 
-The original problem statement can be found on Professor Jeisson Hidalgo Céspedes' website:
-
-https://jeisson.ecci.ucr.ac.cr/concurrente/2024b/proyectos/nbody/
+The original problem statement can be found on Professor Jeisson Hidalgo Céspedes' [website](https://jeisson.ecci.ucr.ac.cr/concurrente/2024b/proyectos/nbody/).
 
 # User Guide
 
