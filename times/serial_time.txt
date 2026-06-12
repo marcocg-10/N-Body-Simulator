@@ -1,0 +1,21 @@
+[prun] Master compute host = compute-6
+[prun] Resource manager = slurm
+[prun] Launch cmd = mpiexec.hydra -bootstrap slurm bin/proyecto02 test/job003/job003.tsv 1 (family=mpich)
+
+ Performance counter stats for 'prun bin/proyecto02 test/job003/job003.tsv 1':
+
+             18.82 msec task-clock:u              #    0.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 /sec                   
+                 0      cpu-migrations:u          #    0.000 /sec                   
+             2,681      page-faults:u             #  142.483 K/sec                  
+        25,743,595      cycles:u                  #    1.368 GHz                    
+        37,339,749      instructions:u            #    1.45  insn per cycle         
+         7,789,748      branches:u                #  413.989 M/sec                  
+           213,073      branch-misses:u           #    2.74% of all branches        
+
+    2729.628977835 seconds time elapsed
+
+       0.011701000 seconds user
+       0.008087000 seconds sys
+
+

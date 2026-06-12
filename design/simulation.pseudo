@@ -1,0 +1,26 @@
+procedure updateVelocity(job, bodies):
+    for i to size:
+        if absorbed:
+            continue
+        else:
+        distanceVector[k] = bodies[i].position[k] - bodies[j].position[k];
+end procedure
+
+procedure updatePosition(job, bodies, absorbedCount):
+    for i to size:
+        bodies[i].position[n] += bodies[i].velocity[n] * job.deltaT
+    checkCollisions(bodies, absorbedCount)
+end procedure
+
+procedure updatePosition(bodies, bodieToUpdate, bodyAbsorbed):
+    for i to size(bodies[bodyToUpdate].velocity):
+        bodies[bodyToUpdate].velocity[i] := 
+        (bodies[bodyToUpdate].mass * bodies[bodyToUpdate].velocity[i] + 
+        bodies[bodyAbsorbed].mass * bodies[bodyAbsorbed].velocity[i]) / 
+        (bodies[bodyToUpdate].mass + bodies[bodyAbsorbed].mass)
+    end for
+    bodies[bodyToUpdate].radius := cbrt(pow(bodies[bodyToUpdate].radius, 3) 
+    + pow(bodies[bodyAbsorbed].radius, 3))
+    bodies[bodyToUpdate].mass += bodies[bodyAbsorbed].mass
+    bodies[bodyAbsorbed].mass := -1
+end procedure

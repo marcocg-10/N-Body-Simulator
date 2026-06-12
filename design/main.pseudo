@@ -1,0 +1,8 @@
+procedure main:
+    read jobs
+    for i to size(bodies):
+        load bodies
+        if !absorbed && finalTime
+            simulation
+        write results
+end procedure
